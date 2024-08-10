@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Workout Planner{% endblock %}</title>
+    <!-- Add CSS and other meta tags here -->
+</head>
+<body>
+    <header>
+        <h1>My Workout Planner</h1>
+        <!-- Navigation bar or other header content -->
+    </header>
+
+    <div class="content">
+        {% block content %}
+        <!-- Child templates will override this block -->
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Workout Planner</p>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
